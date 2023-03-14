@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -v "bin" /etc/passwd
+find . -mindepth 1 -type d ! -name .. | wc -l
